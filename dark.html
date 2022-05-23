@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="toggle-class">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Dark / Light</title>
+</head>
+<body class="h-screen w-full flex justify-center items-center bg-gray-100 dark:bg-slate-700 dark:text-white">
+    <div class= " ">
+        <h1 >Hello Mode Changer</h1>
+        <button id="dark-toggle-btn" class=" rounded-lg px-6 py-2 border-2 bg-purple-400 dark:bg-slate-700  ">Go to Light Mode</button>
+    </div>
+    <script>
+        const darkToggleBtn = document.getElementById("dark-toggle-btn")
+        const darkMode = document.getElementById("toggle-class")
+        darkToggleBtn.onclick = function(){
+            darkMode.classList.toggle("dark");
+            darkToggleBtn.innerText === "Go to Light Mode" ? darkToggleBtn.innerText = "Go to Night Mode" : darkToggleBtn.innerText = "Go to Light Mode"            
+        }
+        
+    </script>
+</body>
+</html>

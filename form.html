@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Form</title>
+</head>
+<body id="body" class="bg-white dark:bg-red">
+
+<div class="relative antialiased bg-gray-100 min-h-screen max-w-full flex flex-col items-center justify-center 
+text-gray-800 dark:bg-slate-800">
+
+    <h2 class="text-2xl font-semibold text-center mb-4">login to your account</h2>
+    <form class="shadow-md py-8 px-8 bg-white w-96 border-t-[6px] border-indigo-400 rounded-t-md">
+        <label class="font-semibold block mb-2 " >Username or Email</label>
+        <input class="block border rounded w-full p-2 mb-3 focus:outline-none focus:ring-1 ring-indigo-600  "  type="text" placeholder="Email">
+        <label class="font-semibold block mb-2" >Password</label>
+        <input  class="block border rounded w-full p-2 mb-3  focus:outline-none focus:ring-1 ring-indigo-600" type="text" placeholder="Password">
+        <div class="flex justify-between items-center mt-4">
+            <button type="submit" class="bg-indigo-500 px-6 py-2 rounded-md text-white hover:bg-white border-2 transition-all duration-300 border-transparent hover:border-indigo-300  hover:text-indigo-600  ">Login</button>
+            <a href="" class="text-sm hover:underline font-medium">Forget password?</a>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
