@@ -7,9 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Contact Form</title>
 </head>
-<body class="bg-gray-100 dark:bg-slate-700  antialiased ">
+<body class="bg-gray-100 dark:bg-slate-700  antialiased h-screen pt-12 ">
     <!--main wrapper div -->
-    <div class="flex justify-between min-h-screen items-center  w-full border">
+    <div class="flex justify-between  items-center  w-full border">
    
      <!-- contact form wrapper div  -->
      <div class="bg-cyan-700  max-w-4xl  p-6 sm:p-8 text-white flex flex-col  md:flex-row md:space-y-0 md:space-x-6 space-y-10 rounded-lg shadow-md mx-auto overflow-hidden">
@@ -52,7 +52,7 @@
             </div>
         </div>
         <!-- contact form wrapper  -->
-      <div class="relative">
+        <div class="relative">
           <div class="absolute -left-24 -bottom-12 z-0 bg-teal-400 w-40 h-40 rounded-full"></div>
           <div class="absolute -right-24 -top-24 z-0 bg-teal-400 w-40 h-40 rounded-full"></div>
           <div class="z-10 relative bg-white rounded-md  text-gray-600 sm:w-80 shadow-md  ">
@@ -73,16 +73,31 @@
                 </form>
             </div>
       </div>
-         
+     
             </div>
+          
+            
         </div>
-     </div>
-
-
+    
     </div>
+    
+    
+</div>
+<button class="mx-auto relative z-10 mt-10 flex items-center font-bold space-x-2 border-2 px-5 py-2" id="backBtn"  >
+   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 bg-slate-400 rounded-full text-white " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+       <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+     </svg>
+   <p class="text-lg" >Back</p>
+</button>
 
     <!-- icon cdn  -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        const back =document.getElementById("backBtn")
+        back.onclick= function backfunc(){
+            history.back(1)
+            }
+    </script>
 
 </body>
 </html>
